@@ -1,0 +1,66 @@
+*{
+position:relative;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+select{
+    box-shadow:0 10px 25px;
+    font: size 1.5em;
+    color:white;
+    border:0;
+}
+.select-box{
+    position:relative;
+    width:320px;
+}
+.select-box select{
+    width:100%;
+    position:relative;
+    padding:16px 30px 16px 85px;
+    border-radius:50px;
+    font:400 22px Arial;
+    -webkit-appearance:none;
+    appearance:none;
+    color:#931dff;;
+    border:1px solid #616161;
+}
+.select-box select::ms-expand{
+    display:none;
+}
+.select-box select:focus{
+    outline:none;
+    box-shadow:0 0 10px -1px #931dff;
+}
+.select-box .label{
+    position:absolute;
+    z-index:1;
+    display: inline-block;
+    font:600 22px Arial;
+    color:#750dd4;
+    top:16px;
+    left:16px;
+}
+.select-box i{
+    position:absolute;
+    right:15px;
+    top:20px;
+    font-size:18px;
+    color:#616161;
+}
+.select-box select:focus+ i{
+    color:#931dff;
+}
+.custom-select{
+    position:relative;
+}
+
+
+   
